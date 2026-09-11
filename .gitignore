@@ -1,15 +1,28 @@
+# Python
 __pycache__/
 *.py[cod]
-*.xml
-*.html
 
-exports/
-scans/
-
+# Virtual environments
 .venv/
 venv/
-.env
 
+# Generated NexScan files
+exports/
+scans/
+nexscan
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs / temporary files
+*.log
+*.tmp
+
+# Editors
 .vscode/
 .idea/
-nexscan
+
+# OS files
+.DS_Store
+Thumbs.db

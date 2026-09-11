@@ -8,12 +8,18 @@ It performs service discovery using Nmap, analyzes detected services for common 
 
 ## Features
 
-- TCP Port Scanning
+- Port Scanning
 - Service & Version Detection
 - Risk Score Calculation
 - Vulnerability Analysis
 - Security Recommendations
 - HTML Report Generation
+- Automated dependency/setup script
+
+---
+
+## Screenshots
+![alt text](swappy-20260912_012028.png)
 
 ---
 
@@ -21,43 +27,6 @@ It performs service discovery using Nmap, analyzes detected services for common 
 
 - Python 3
 - Nmap
-
-Install Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Usage
-
-```bash
-python nexscan.py
-```
-
-Enter the target:
-
-```text
-scanme.nmap.org
-```
-
-The HTML report will be generated inside:
-
-```
-exports/report.html
-```
-
----
-
-## Example Output
-
-- Open Ports
-- Detected Services
-- Risk Level
-- Vulnerability Analysis
-- Security Recommendations
-- HTML Report
 
 ---
 
