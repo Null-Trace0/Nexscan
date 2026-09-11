@@ -25,7 +25,7 @@ It performs service discovery using Nmap, analyzes detected services for common 
 
 
 
-https://github.com/user-attachments/assets/fe71f687-a2c1-4d6e-86ed-5d9c39575bd8
+
 
 
 
