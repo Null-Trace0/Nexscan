@@ -26,7 +26,7 @@ It performs service discovery using Nmap, analyzes detected services for common 
 <video controls>
   <source src="media/demo.mp4" type="video/mp4">
 </video>
-## Demo
+
 
 [▶ Watch NexScan Demo](media/demo.mp4)
 
