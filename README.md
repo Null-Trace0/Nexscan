@@ -1,8 +1,8 @@
 # NexScan
 
-NexScan is a lightweight network reconnaissance and vulnerability assessment tool built in Python.
+NexScan is a lightweight CLI-based network reconnaissance and security assessment tool built in Python.
 
-It performs service discovery using Nmap, analyzes detected services for common security risks, calculates a risk score, generates remediation recommendations, and exports a professional HTML report.
+It combines Nmap-based port and service discovery with risk assessment, vulnerability analysis, security recommendations, and HTML report generation.
 
 ---
 
@@ -38,13 +38,17 @@ The installer checks the required dependencies, installs missing components, cre
 
 ### Usage
 
-```md
-## Usage
-
 Start NexScan:
 
 ```bash
 ./nexscan
+```
+[Launching Nexscan](media/launch.png)
+
+Enter IP or hostname of a system you are authorized to scan.
+```bash
+Example: 
+scanme.nmap.org
 ```
 
 
