@@ -1,21 +1,14 @@
-# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.xml
+*.html
 
-# Virtual environments
+exports/
+scans/
+
+.venv/
 venv/
 .env
 
-# Scan results
-scans/*.xml
-exports/*.html
-
-# OS
-.DS_Store
-Thumbs.db
-
-# VSCode
 .vscode/
-
-# Logs
-*.log
+.idea/
