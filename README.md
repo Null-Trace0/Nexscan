@@ -80,6 +80,25 @@ NexScan/
 
 ---
 
-## Disclaimer
+## Responsible Use
 
-This tool is intended for educational purposes and authorized security testing only.
+NexScan is intended for authorized security testing, research, and educational use.
+
+Only scan systems that you own or have explicit permission to test. Users are responsible for ensuring that their use of NexScan complies with applicable laws, regulations, and authorization requirements.
+
+The developers assume no responsibility for unauthorized or unlawful use of this software.
+
+For demonstration purposes, this project uses `scanme.nmap.org`, which is provided by the Nmap Project for authorized Nmap scanning. Do not use it for exploitation, denial-of-service testing, or excessive scanning.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <b>NexScan</b><br>
+  Lightweight Network Reconnaissance & Security Assessment
+</p>
