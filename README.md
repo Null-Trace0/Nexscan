@@ -23,12 +23,7 @@ It performs service discovery using Nmap, analyzes detected services for common 
 
 ## Installation & Usage demo
 
-<video controls>
-  <source src="media/demo.mp4" type="video/mp4">
-</video>
 
-
-[▶ Watch NexScan Demo](media/demo.mp4)
 
 ---
 
