@@ -43,7 +43,7 @@ Start NexScan:
 ```bash
 ./nexscan
 ```
-[Launching Nexscan](media/launch.png)
+![Launching Nexscan](media/launch.png)
 
 Enter IP or hostname of a system you are authorized to scan.
 ```bash
