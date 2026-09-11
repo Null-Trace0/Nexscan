@@ -7,7 +7,8 @@ from recommendations import get_recommendations
 from report import generate_html
 from vuln import analyze_vulnerabilities
 import datetime
-
+from pathlib import Path 
+import webbrowser
 filename = datetime.datetime.now().strftime("%Y_%m_%D_%H_%M_%S")
 
 from rich.table import Table
@@ -131,14 +132,26 @@ def main():
         #-----------------
 
     generate_html(
-        data,
-        risk,
-        recommendation_list,
-        findings
+    data,
+    risk,
+    recommendation_list,
+    findings
     )
 
+    report_path = Path("exports/report.html").resolve()
+    report_url = report_path.as_uri()
+
     print("\n<*> Report Saved")
-    print("Location : exports/report.html")
+    print(f"Location : {report_url}")
+
+    choice = input("\nOpen report in browser? [Y/n]: ").strip().lower()
+
+    if choice in ("", "y", "yes"):
+        if webbrowser.open(report_url):
+            print("[+] Report opened in browser.")
+        else:
+            print("[!] Could not open browser automatically.")
+            print(f"    Open manually: {report_url}")
 
 if  __name__ == "__main__":
     main()
