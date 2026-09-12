@@ -72,7 +72,6 @@ scanme.nmap.org
 ```md
 ## How It Works
 
-```text
 Target
   ↓
 Nmap Scan
@@ -88,6 +87,7 @@ Vulnerability Analysis
 Security Recommendations
   ↓
 HTML Report
+```
 
 ---
 
