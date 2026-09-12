@@ -35,6 +35,22 @@ chmod +x install.sh
 
 The installer checks the required dependencies, installs missing components, creates an isloated python environment, and prepares the Nexscan launcher.
 
+---
+
+### Manual Setup
+
+If `install.sh` fails or your distribution is not supported:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+Ensure Nmap is installed and available in youre `Path`, then run:
+```bash
+.venv/bin/python nexscan.py
+```
+
+---
 
 ### Usage
 
@@ -51,10 +67,27 @@ Example:
 scanme.nmap.org
 ```
 
+### Workflow
 
+```md
+## How It Works
 
-
-
+```text
+Target
+  ↓
+Nmap Scan
+  ↓
+XML Parsing
+  ↓
+Service & Version Detection
+  ↓
+Risk Assessment
+  ↓
+Vulnerability Analysis
+  ↓
+Security Recommendations
+  ↓
+HTML Report
 
 ---
 
@@ -62,6 +95,13 @@ scanme.nmap.org
 
 - Python 3
 - Nmap
+
+Missing dependencies and Python environment are automatically handled by `install.sh` on supported linux distritbutions.
+
+The automated installer supports Linux distributions using:
+
+- `apt` — Debian, Ubuntu, Kali, Linux Mint, and derivatives
+- `pacman` — Arch Linux, CachyOS, Manjaro, EndeavourOS, and derivatives
 
 ---
 
